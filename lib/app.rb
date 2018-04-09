@@ -4,7 +4,7 @@ class BookmarkApp < Sinatra::Base
 
   get '/bookmarks' do
 
-    @bookmarks = ['Github']
+    @bookmarks = Bookmark.all
 
     erb :bookmarks
 
