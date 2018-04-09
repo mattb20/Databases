@@ -1,13 +1,2 @@
 # Bookmark-Manager
-
-As a user who frequents many sites
-So  that I can browse conveniently
-I would like to see a list of bookmarks
-
-User          BookmarkManager    
- |   view_bookmarks   |                       
- |  ----------------->|                
- |                    |                
- |   Array(bookmarks) |                
- | <----------------- |                
- |                    |                
+![User Story 1](/Users/jordanbrooks/Documents/makers/week-challenge/bookmark-manager/assets/user_story1.png)
