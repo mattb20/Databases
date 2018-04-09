@@ -10,9 +10,11 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 SimpleCov.start
 
 RSpec.configure do |config|
+
   ENV['RACK_ENV'] = 'test'
   require './lib/app.rb'
   require 'capybara'
   require 'capybara/rspec'
   Capybara.app = BookmarkApp
+  
 end

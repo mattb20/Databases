@@ -1,0 +1,78 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/mattburgoyne/Desktop/Projects/bookmark-manager/lib/app.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/mattburgoyne/Desktop/Projects/bookmark-manager/spec/app_spec.rb": [
+        1
+      ],
+      "/Users/mattburgoyne/Desktop/Projects/bookmark-manager/spec/bookmarkmanager_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/mattburgoyne/Desktop/Projects/bookmark-manager/lib/bookmarkmanager.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/mattburgoyne/Desktop/Projects/bookmark-manager/spec/features/view_bookmark_spec.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1523279296
+  }
+}
