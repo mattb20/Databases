@@ -5,9 +5,9 @@ class BookmarkManager
 
   end
 
-  def all
-    @bookmarks
-  end
+  # def all
+  #   @bookmarks
+  # end
 
   def self.all
 
