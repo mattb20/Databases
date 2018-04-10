@@ -8,7 +8,7 @@ describe BookmarkManager do
 
       connection = PG.connect(dbname: 'bookmark_manager_test')
 
-      #Add the test data
+      # Add the test data
       connection.exec("INSERT INTO bookmarks (url) VALUES ('http://makersacademy.com');")
       connection.exec("INSERT INTO bookmarks (url) VALUES ('http://destroyallsoftware.com');")
 

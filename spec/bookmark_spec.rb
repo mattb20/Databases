@@ -2,13 +2,10 @@ require 'bookmark'
 
 
 describe Bookmark do
-  # describe '.all' do
-  #   it 'returns all bookmarks' do
-  #     bookmarks = BookmarkManager.all
-  #
-  #     expect(bookmarks).to include("http://makersacademy.com")
-  #     expect(bookmarks).to include("http://google.com")
-  #
-  #   end
-  # end
+ describe "#bookmark_url" do
+   it 'returns a URL' do
+     bookmark = Bookmark.new('http://google.com')
+     expect(bookmark.bookmark_url).to eq 'http://google.com'
+   end
+ end
 end
