@@ -3,5 +3,6 @@
 
 # User Stories
 
-As a user, who often visits the same websites, I would like to see a list of my bookmarks (Implemented)
+As a user, who often visits the same websites, I would like to see a list of my bookmarks (Implemented)<br/>
+
 As a user, who wants easy access to a favourite website, I would like to create a bookmark (Currently implementing)

@@ -10,4 +10,10 @@ class BookmarkApp < Sinatra::Base
     erb :bookmarks
 
   end
+
+  get '/addbookmark' do
+
+    erb :addbookmark
+
+  end
 end
