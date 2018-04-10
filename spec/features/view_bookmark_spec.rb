@@ -3,12 +3,12 @@ require './lib/bookmarkmanager'
 require 'pg'
 
 
-feature 'a link can be viewed' do
-  scenario 'user chooses bookmark to be viewed' do
-
-    visit('/bookmarks')
-    expect(page).to have_content('http://google.com')
-  end
+# feature 'a link can be viewed' do
+#   scenario 'user chooses bookmark to be viewed' do
+#
+#     visit('/bookmarks')
+#     expect(page).to have_content('http://google.com')
+#   end
 
   feature 'Viewing bookmarks' do
     scenario 'A user can view bookmarks' do
@@ -24,5 +24,5 @@ feature 'a link can be viewed' do
       expect(page).to have_content "http://destroyallsoftware.com"
 
     end
-  end
+
 end

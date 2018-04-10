@@ -23,4 +23,13 @@ describe BookmarkManager do
     end
   end
 
+  describe "#self.create" do
+
+    it 'creates a new bookmark' do
+      BookmarkManager.create(url: 'http://reddit.com')
+      expect(BookmarkManager.all).to include 'http://reddit.com'
+    end
+
+  end
+
 end

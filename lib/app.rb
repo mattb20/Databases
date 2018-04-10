@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require_relative 'bookmark'
+require_relative 'bookmarkmanager'
 require 'pry'
 
 class BookmarkApp < Sinatra::Base
@@ -7,9 +8,8 @@ class BookmarkApp < Sinatra::Base
 
 
 
-    @bookmarks = Bookmark.all
+    @bookmarks = BookmarkManager.all
     erb :bookmarks
-    @bookmark = Bookmark.new(session[:bookmark])
 
 
   end
@@ -21,7 +21,11 @@ class BookmarkApp < Sinatra::Base
   end
 
   post '/bookmarks' do
-    session[:bookmark] = params[:'addbookmark']
+    url = params[:'addbookmarkurl']
+    # connection = PG.connect(dbname: 'bookmark_manager_test')
+    # connection.exec("INSERT INTO bookmarks (url) VALUES('#{url}')")
+    BookmarkManager.create(url: url)
+    redirect('/bookmarks')
 
   end
 end
