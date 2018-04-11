@@ -12,8 +12,10 @@ SimpleCov.start
 
 
 RSpec.configure do |config|
+
   config.before(:each) do
     require_relative './setup_test_database'
+    
   end
 
   ENV['ENVIRONMENT'] = 'test'

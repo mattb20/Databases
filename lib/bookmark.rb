@@ -1,5 +1,6 @@
 require 'pg'
 require 'pry'
+require 'uri'
 
 class Bookmark
 
@@ -7,7 +8,27 @@ class Bookmark
 
 
   def initialize(url)
+
     @bookmark_url = url
+    @uri = URI.parse(url)
+
+
+  end
+
+  def is_valid_url?
+
+    if @uri.kind_of?(URI::HTTP) or @uri.kind_of?(URI::HTTPS)
+
+      return true
+
+    else
+
+      return false
+    end
+
+
+    # URI::DEFAULT_PARSER.regexp[:ABS_URI]
+
   end
 
 
