@@ -22,10 +22,21 @@ class BookmarkApp < Sinatra::Base
 
   post '/bookmarks' do
     url = params[:'addbookmarkurl']
+    bookmark = Bookmark.new(url)
     # connection = PG.connect(dbname: 'bookmark_manager_test')
     # connection.exec("INSERT INTO bookmarks (url) VALUES('#{url}')")
-    BookmarkManager.create(url: url)
+    if bookmark.is_valid_url?
+      BookmarkManager.create(url: url)
+    else
+      redirect '/invalidbookmark'
+    end
     redirect('/bookmarks')
+
+  end
+
+  get '/invalidbookmark' do
+
+    erb :invalidbookmark
 
   end
 end

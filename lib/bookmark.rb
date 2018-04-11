@@ -10,6 +10,7 @@ class Bookmark
   def initialize(url)
 
     @bookmark_url = url
+    url = url.tr(' ', '')
     @uri = URI.parse(url)
 
 
@@ -24,6 +25,8 @@ class Bookmark
     else
 
       return false
+
+
     end
 
 
